@@ -16,13 +16,44 @@ O objetivo é criar um algoritmo que determine quais pessoas podem adotar quais 
 - **Regra Especial Loco:** Não se importa com ordem, mas precisa de companhia (máximo 1 por pessoa)
 
 ```plaintext
-#Animais Cadastrados:
-**Nome**            **Espécie**          **Brinquedos Favoritos**
+Animais Cadastrados:
+Nome            Espécie          Brinquedos Favoritos
  Rex             Cão                  RATO, BOLA
 Mimi             Gato                 BOLA, LASER
 Fofo             Gato              BOLA, RATO, LASER
-Zero             Gato                RATO, BOLA
+Zero             Gato                 RATO, BOLA
 Bola             Cão                CAIXA, NOVELO
 Bebe             Cão              LASER, RATO, BOLA
-Loco            Jabuti             SKATE, RATO
+Loco            Jabuti                SKATE, RATO
 ```
+
+# **ETAPA 1: VALIDAÇÃO**
+- Valida duplicatas em brinquedos e animais
+- Verifica se brinquedos e animais existem no sistema
+- Processa e normaliza as entradas (trim, case conversion)
+
+# **ETAPA 2: PROCESSAMENTO**
+- Determinação: Decide quem pode adotar cada animal
+- Execução: Aplica limites e regras especiais (como Loco)
+- Gerencia estado de adoções e pendências
+
+# **ETAPA 3: FORMATAÇÃO**
+- Ordena resultados alfabeticamente
+- Formata saída no padrão: "Nome - destino"
+
+# **Casos de Teste Cobertos**
+**Casos Válidos:**
+- Adoção simples com match perfeito
+- Adoção com intercalação de brinquedos
+- Animais indo para abrigo por conflito
+- Aplicação de limites de adoção
+
+**Casos de Erro:**
+- Animal inexistente
+- Brinquedo inválido
+- Duplicatas em entradas
+
+#**RESULTADO**
+
+<img width="813" height="357" alt="test" src="https://github.com/user-attachments/assets/3d9b11f3-a3b4-4eb2-bc38-fecd49a0617c" />
+
