@@ -53,7 +53,7 @@ Loco            Jabuti                SKATE, RATO
 - Brinquedo inválido
 - Duplicatas em entradas
 
-#**RESULTADO**
+# **RESULTADO**
 
 <img width="813" height="357" alt="test" src="https://github.com/user-attachments/assets/3d9b11f3-a3b4-4eb2-bc38-fecd49a0617c" />
 
